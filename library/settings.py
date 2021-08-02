@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'rest_framework',
     # local-apps
     'book.apps.BookConfig',
-    'post.apps.PostConfig',
+    'blog.apps.BlogConfig',
 ]
 
 MIDDLEWARE = [
