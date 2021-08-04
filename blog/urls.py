@@ -15,9 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from .views import PostCreateList
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path("books/", include("book.urls")),
-    path("blog/", include("blog.urls"))
+    path("post/", PostCreateList.as_view(), name="get-create-post"),
+
 ]
